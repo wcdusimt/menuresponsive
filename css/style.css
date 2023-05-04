@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: helvetica;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+
+.ancho{
+  max-width: 1200px;
+  margin: auto;
+  border: 1px red solid;
+}
+
+.naranja{
+  color: orange;
+}
+
+header{
+  border: 1px red solid;
+}
+
+.contenedor-logo{
+  padding: 15px;
+  background-color: #ccc;
+}
+
+.logo-pull{
+  width: 250px;
+  margin: auto;
+}
+
+.logo-pull img{
+  /* border: 1px green solid; */
+  width: 100%;
+}
+
+.menu{
+  border: 1px violet solid;
+  padding: 10px;
+}
+
+.menu ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu ul li{
+  display: inline-block;
+}
+
+.menu ul li a{
+  display:inline-block;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  border: 2px blue solid;
+  padding: 8px 30px;
+  border-radius: 8px;
+  transition: all .5s;
+}
+
+.menu ul li a:hover{
+  background-color: blue;
+  color: white;
+  border: 2px transparent solid;
+}
+
+.contenedor{
+  border: 1px black solid;
+  padding: 10px;
+}
+
+.contenedor-info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info{
+  width: 50%;
+  /* border: 1px blue solid; */
+}
+
+.info h2{
+  font-size: 20px;
+}
+
+/* .boton{
+  border: 1px red solid;
+} */
+
+.boton a{
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: red;
+  display: inline-block;
+  color: white;
+  border-radius: 5px;
+  transition: all .5s;
+}
+
+.boton a:hover{
+  transition: all .5s;
+  background-color: #333;
+}
+
+.sandwich{
+  padding: 10px;
+  display: none;
+  /* border: 1px green solid; */
+}
+
+.icono{
+  font-size: 20px;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.imagen{
+ /*  border: 1px black solid; */
+  width: 50%;
+  height: 400px;
+  display: none;
+}
+
+.imagen img{
+  /* border: 1px red solid; */
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  height: 116px;
+  color: white;
+}

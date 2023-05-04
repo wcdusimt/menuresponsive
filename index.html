@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/movil.css">
+  <script src="https://kit.fontawesome.com/0516348396.js" crossorigin="anonymous"></script>
+  <title>Menu Responsive JS</title>
+
+  <!-- Link de libería JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js">
+
+  </script>
+</head>
+<body>
+  <header class="">
+
+    <div class="contenedor-logo ancho">
+      <figure class="logo-pull">
+        <img src="img/pullrequest-logo.svg" alt="logotipo">
+      </figure>
+    </div>
+
+    <div class="sandwich ancho">
+      <a href="#" id="iconomenu">
+        <i class="icono fa-solid fa-bars"></i>
+      </a>
+    </div>
+
+    <nav class="menu ancho" id="cajamenu">
+      <ul>
+        <li>
+          <a href="#">Inicio</a>
+        </li>
+        <li>
+          <a href="#">Empresa</a>
+        </li>
+        <li>
+          <a href="#">Servicios</a>
+        </li>
+        <li>
+          <a href="#">Clientes</a>
+        </li>
+        <li>
+          <a href="#">Ubicación</a>
+        </li>
+        <li>
+          <a href="#">Contáctanos</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <section class="contenedor ancho">
+
+    <div class="contenedor-info">
+      <article class="info">
+        <h1 class="naranja">Creación de páginas web</h1>
+        <br>
+        <h2>Curso básico de HTML5 y CSS3</h2>
+        <br>
+  
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quasi repellendus fugiat doloribus sequi debitis asperiores ex repellat quam velit. Blanditiis voluptatem consectetur, autem labore nemo tempora facere consequuntur facilis?</p>
+        <br>
+  
+        <div class="boton">
+          <a id="btn_leer" href="#">Ver</a>
+        </div>
+      </article>
+  
+      <figure class="imagen" id="fotocodigo">
+        <img src="img/foto_pullrequest.svg" alt="">
+      </figure>
+    </div>
+
+  </section>
+  
+  <footer class="ancho">
+    @wilberthcanul
+  </footer>
+
+  <!-- Funciones de Javascript -->
+  <script>
+    $("#iconomenu").click(function(){
+      $("#cajamenu").slideToggle();
+    });
+
+    $("#btn_leer").click(function(){
+      $("#fotocodigo").slideToggle();
+    });
+  </script>
+</body>
+</html>
